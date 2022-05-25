@@ -18,17 +18,16 @@ public class Jugador extends Futbolista {
 		dorsal = 7;
 	}
 
-	@Override
+
 	public int compareTo(Futbolista o) {
 		return Math.abs(this.getEdad()-((Jugador)o).getEdad());
 	}
 
-	@Override
 	public boolean jugarConLasManos() {
 		return false;
 	}
 	
-	@Override
+
 	public String toString() {
 		return super.toString()+" con el dorsal " + this.dorsal + ". Ha marcado " + this.golesMarcados;
 	}

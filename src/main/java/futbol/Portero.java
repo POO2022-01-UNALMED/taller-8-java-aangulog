@@ -19,18 +19,15 @@ public class Portero extends Futbolista {
 		dorsal = 7;
 	}
 
-	@Override
 	public int compareTo(Futbolista o) {
 		return Math.abs(this.golesRecibidos-((Portero)o).golesRecibidos);
 
 	}
 
-	@Override
 	public boolean jugarConLasManos() {
 		return true;
 	}
 
-	@Override
 	public String toString() {
 		return super.toString()+" con el dorsal " + this.dorsal + ". Le han marcado " + this.golesRecibidos;
 	}
