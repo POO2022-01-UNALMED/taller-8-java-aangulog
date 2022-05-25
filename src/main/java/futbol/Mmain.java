@@ -6,10 +6,25 @@ public class Mmain {
 	
 
 		
-Portero f = new Portero("Santiago", 23, (short) 6, (byte) 8);
+
 		
+Futbolista f = new Futbolista("Alejo", 20, "Delantero") {
+			
+			@Override
+			public int compareTo(Object o) {
+				// TODO Auto-generated method stub
+				return 0;
+			}
+			
+			@Override
+			public boolean jugarConLasManos() {
+				// TODO Auto-generated method stub
+				return false;
+			}
+		};
 		boolean ok = false;
-		if (f.jugarConLasManos()) {
+		if (f.getEdad() == 20 && f.getNombre().equals("Alejo") 
+				&& f.getPosicion().equals("Delantero")) {
 			ok = true;
 		}
 		
