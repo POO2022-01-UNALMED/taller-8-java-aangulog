@@ -6,13 +6,17 @@ public class Portero extends Futbolista {
 	public byte dorsal;
 	public final String posicion="Portero";
 
-	public Portero(String nombre, int edad, String posicion) {
+	public Portero(String nombre, int edad, String posicion, short g, byte d) {
 		super(nombre, edad, "Portero");
-		golesRecibidos=289;
-		dorsal = 7;
+		golesRecibidos=g;
+		dorsal=d;
+		
 	}
 
 	public Portero() {
+		super();
+		golesRecibidos=289;
+		dorsal = 7;
 	}
 
 	@Override
