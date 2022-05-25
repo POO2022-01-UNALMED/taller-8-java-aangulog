@@ -4,16 +4,14 @@ public class Mmain {
 
 	public static void main(String[] args) {
 	
+
 		
-		Jugador f = new Jugador("Valeria", 21, "defensa", (short) 4, (byte) 8);
+Portero f = new Portero("Santiago", 23, (short) 6, (byte) 8);
+		
 		boolean ok = false;
-		if (f.getEdad() == 21 && f.getNombre().equals("Valeria") 
-				&& f.getPosicion().equals("defensa") && f.golesMarcados == 4 
-				&& f.dorsal == 8) {
+		if (f.jugarConLasManos()) {
 			ok = true;
 		}
-		
-		
 		
 		
 		

@@ -6,7 +6,7 @@ public class Portero extends Futbolista {
 	public byte dorsal;
 	public final String posicion="Portero";
 
-	public Portero(String nombre, int edad, String posicion, short g, byte d) {
+	public Portero(String nombre, int edad, short g, byte d) {
 		super(nombre, edad, "Portero");
 		golesRecibidos=g;
 		dorsal=d;
@@ -21,7 +21,7 @@ public class Portero extends Futbolista {
 
 	@Override
 	public int compareTo(Futbolista o) {
-		return Math.abs(this.getEdad()-((Portero)o).getEdad());
+		return Math.abs(this.golesRecibidos-((Portero)o).golesRecibidos);
 
 	}
 
